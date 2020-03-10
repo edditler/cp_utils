@@ -11,6 +11,6 @@ if [[ ! -f $coordfile ]]; then
     exit 1
 fi
 
-natoms=$(head -n1 $coordfile | tr -d '[:space:])
+natoms=$(head -n1 $coordfile | tr -d '[:space:]')
 nlines=$(echo "$natoms+2" | bc -l)
 tail -n $nlines $coordfile
