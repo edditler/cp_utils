@@ -1,4 +1,6 @@
+#!/usr/bin/env python3
 import click
+import numpy as np
 import ase
 import ase.io
 

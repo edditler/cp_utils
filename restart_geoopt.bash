@@ -10,8 +10,8 @@ for theoutput in "$@"; do
         cp -v inp old_inp;
         mv -v out old_out;
         mv -v zirc-1.restart inp;
-        cp -v ~/run_gpu.bash .
-        sbatch run_gpu.bash;
+        cp -v ~/run*.bash .
+        sbatch run*.bash;
         cd $backto;
     fi
 done
